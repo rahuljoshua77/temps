@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# Update dan upgrade sistem
+sudo apt update
+sudo apt upgrade -y
+
+# Install Node.js
+curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash -
+sudo apt-get install -y nodejs
+
+# Install npm packages
+npm i cheerio qrcode-terminal whatsapp-web.js moment-timezone request readline-sync
+npm i axios
+npm i chrome-paths
+npm install github:pedroslopez/whatsapp-web.js#webpack-exodus
+
+# Download dan install Google Chrome
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo apt install -y ./google-chrome-stable_current_amd64.deb
+
+touch data.txt
+
+echo "Instalasi selesai!"
+
+111111112Ok!
